@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Purchase | Empowering the Nation</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- HEADER -->
+  <section class="sub-header">
+    <nav>
+      <a href="index.html"><img src="images/logo.png" alt="Empowering the Nation Logo"></a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="courses.html">COURSES</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Calculate Course Fees</h1>
+  </section>
+
+  <!-- BACK BUTTON -->
+  <div style="margin: 20px;">
+    <a href="courses.html" class="hero-btn" style="background-color:#70a66a;">← Back to Courses</a>
+  </div>
+
+  <!-- COURSE SELECTION -->
+  <section class="course">
+    <h1>Select Your Courses</h1>
+    <div class="row" style="justify-content:center;">
+      <div>
+        <h3>6-Month Courses</h3>
+        <ul style="list-style:none;">
+          <li><input type="checkbox" id="firstAid"> First Aid</li>
+          <li><input type="checkbox" id="sewing"> Sewing</li>
+          <li><input type="checkbox" id="landscaping"> Landscaping</li>
+          <li><input type="checkbox" id="lifeSkills"> Life Skills</li>
+        </ul>
+      </div>
+      <div style="margin-left:50px;">
+        <h3>6-Week Courses</h3>
+        <ul style="list-style:none;">
+          <li><input type="checkbox" id="childMinding"> Child Minding</li>
+          <li><input type="checkbox" id="cooking"> Cooking</li>
+          <li><input type="checkbox" id="gardening"> Garden Maintenance</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- SHOPPING CART AREA -->
+  <section style="width:80%; margin:auto; background-color:#f2f2f2; border-radius:8px; padding:30px;">
+    <h2>Shopping Cart</h2>
+    <table width="100%" cellpadding="10">
+      <tr style="text-align:left;">
+        <th>Course Title & Description</th>
+        <th>Quantity</th>
+        <th>Total Price</th>
+      </tr>
+      <tr>
+        <td>Course Example 1</td>
+        <td>
+          <button>-</button>
+          <input type="text" value="1" style="width:40px; text-align:center;">
+          <button>+</button>
+        </td>
+        <td>R 1500</td>
+      </tr>
+      <tr>
+        <td>Course Example 2</td>
+        <td>
+          <button>-</button>
+          <input type="text" value="2" style="width:40px; text-align:center;">
+          <button>+</button>
+        </td>
+        <td>R 3000 [5% Disc]</td>
+      </tr>
+      <tr>
+        <td>Course Example 3</td>
+        <td>
+          <button>-</button>
+          <input type="text" value="3" style="width:40px; text-align:center;">
+          <button>+</button>
+        </td>
+        <td>R 4500 [10% Disc]</td>
+      </tr>
+    </table>
+
+    <div st
