@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Empowering the Nation | Home</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- HEADER / NAVIGATION -->
+  <section class="header">
+    <nav>
+      <a href="index.html"><img src="images/logo.png" alt="Empowering the Nation Logo"></a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="courses.html">COURSES</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <div class="text-box">
+      <h1>Empowering the Nation</h1>
+      <p>Upskilling domestic workers and gardeners to build brighter futures through practical training, life skills, and entrepreneurship opportunities.</p>
+      <a href="courses.html" class="hero-btn">Explore Our Courses</a>
+    </div>
+  </section>
+
+  <!-- COURSES OVERVIEW -->
+  <section class="course">
+    <h1>Courses We Offer</h1>
+    <p>Choose from comprehensive six-month learnerships or short six-week training programmes to advance your career or start your own business.</p>
+
+    <div class="row">
+      <div class="course-col">
+        <h3>Six-Month Courses</h3>
+        <p>In-depth courses designed to provide practical and life skills training for long-term growth.</p>
+        <a href="6monthcourses.html" class="hero-btn red-btn">Learn More</a>
+      </div>
+      <div class="course-col">
+        <h3>Six-Week Courses</h3>
+        <p>Short courses to quickly boost your skill set and earn recognized certifications.</p>
+        <a href="6weekcourses.html" class="hero-btn red-btn">Learn More</a>
+      </div>
+      <div class="course-col">
+        <h3>Calculate Fees</h3>
+        <p>Check your total course fees, discounts, and VAT instantly before enrolling.</p>
+        <a href="purchase.html" class="hero-btn red-btn">Calculate Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FACILITIES / TRAINING CENTERS -->
+  <section class="facilities">
+    <h1>Our Training Centres</h1>
+    <p>Our facilities provide a comfortable and safe learning environment in key Johannesburg areas.</p>
+
+    <div class="row">
+      <div class="facilities-col">
+        <img src="images/campus1.jpg" alt="Sandton Campus">
+        <h3>Sandton</h3>
+        <p>45 Grayston Dr — ideal for students from the city and nearby suburbs.</p>
+      </div>
+      <div class="facilities-col">
+        <img src="images/campus2.jpg" alt="Soweto Campus">
+        <h3>Soweto</h3>
+        <p>12 Vilakazi St — serving local communities with accessible and affordable training.</p>
+      </div>
+      <div class="facilities-col">
+        <img src="images/campus3.jpg" alt="Randburg Campus">
+        <h3>Randburg</h3>
+        <p>8 Malibongwe Dr — a welcoming hub for skill development and workshops.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonial">
+    <h1>What Our Students Say</h1>
+    <p>See how Empowering the Nation has changed lives and created opportunities.</p>
+
+    <div class="row">
+      <div class="testimonial-col">
+        <img src="images/student1.jpg" alt="Student testimonial">
+        <div>
+          <p>"After completing the sewing course, I started my own tailoring business. I now employ two people and support my family."</p>
+          <h3>Thandi M.</h3>
+        </div>
+      </div>
+      <div class="testimonial-col">
+        <img src="images/student2.jpg" alt="Student testimonial">
+        <div>
+          <p>"The life skills course helped me gain confidence and understand my rights. I’m more independent now!"</p>
+          <h3>Samuel D.</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CALL TO ACTION -->
+  <section class="cta">
+    <h1>Join Hundreds of Empowered Students Today!</h1>
+    <a href="enroll.html" class="hero-btn">Enroll Now</a>
+  </section>
+
+  <!-- FOOTER -->
+  <section class="footer">
+    <h4>About Empowering the Nation</h4>
+    <p>Founded by Precious Radebe, Empowering the Nation is committed to uplifting domestic workers and gardeners through high-quality, affordable training.</p>
+    <div class="icons">
+      <i class="fa fa-facebook"></i>
+      <i class="fa fa-twitter"></i>
+      <i class="fa fa-instagram"></i>
+    </div>
+    <p>Made with <i class="fa fa-heart-o"></i> by GRP 8</p>
+  </section>
+
+  <!-- NAV TOGGLE SCRIPT -->
+  <script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu() {
+      navLinks.style.right = "0";
+    }
+    function hideMenu() {
+      navLinks.style.right = "-200px";
+    }
+  </script>
+</body>
+</html>
