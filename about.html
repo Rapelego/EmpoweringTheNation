@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Empowering the Nation</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- HEADER / NAVIGATION -->
+  <section class="sub-header">
+    <nav>
+      <a href="index.html"><img src="images/logo.png" alt="Empowering the Nation Logo"></a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="courses.html">COURSES</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>About Empowering the Nation</h1>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section class="about-us">
+    <div class="row">
+      <div class="about-col">
+        <h1>Empowering Communities Through Skills</h1>
+        <p>Founded by <strong>Precious Radebe</strong> in 2022, Empowering the Nation was created to help domestic workers and gardeners gain valuable professional and personal skills. Precious was inspired by her parents and community members who never had the chance to upskill themselves.</p>
+        <p>Our programmes are designed to empower learners to be more marketable, increase their earning potential, and even start their own small businesses. Through our courses, hundreds of individuals have already transformed their lives and careers.</p>
+        <a href="courses.html" class="hero-btn red-btn">Explore Our Courses</a>
+      </div>
+      <div class="about-col">
+        <img src="images/training.jpg" alt="Training session at Empowering the Nation">
+      </div>
+    </div>
+  </section>
+
+  <!-- MISSION AND VISION -->
+  <section class="facilities">
+    <h1>Our Mission & Vision</h1>
+    <div class="row">
+      <div class="facilities-col">
+        <img src="images/mission.jpg" alt="Mission image">
+        <h3>Our Mission</h3>
+        <p>To empower domestic workers and gardeners with accessible, practical, and life-changing training that promotes independence, confidence, and professional growth.</p>
+      </div>
+      <div class="facilities-col">
+        <img src="images/vision.jpg" alt="Vision image">
+        <h3>Our Vision</h3>
+        <p>To create a future where every South African worker has the skills, knowledge, and opportunities needed to achieve financial stability and self-sufficiency.</p>
+      </div>
+      <div class="facilities-col">
+        <img src="images/values.jpg" alt="Values image">
+        <h3>Our Values</h3>
+        <p>Integrity, empowerment, inclusivity, and lifelong learning are at the heart of everything we do.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="campus">
+    <h1>Life at Empowering the Nation</h1>
+    <p>We believe learning should be practical, inspiring, and empowering. Here’s a glimpse into our classrooms and workshops.</p>
+
+    <div class="row">
+      <div class="campus-col">
+        <img src="images/classroom1.jpg" alt="Classroom training">
+        <div class="layer">
+          <h3>Practical Sessions</h3>
+        </div>
+      </div>
+      <div class="campus-col">
+        <img src="images/workshop.jpg" alt="Workshop session">
+        <div class="layer">
+          <h3>Hands-On Learning</h3>
+        </div>
+      </div>
+      <div class="campus-col">
+        <img src="images/graduation.jpg" alt="Graduation celebration">
+        <div class="layer">
+          <h3>Graduation Success</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CALL TO ACTION -->
+  <section class="cta">
+    <h1>Join Empowering the Nation Today</h1>
+    <p>Start your journey to a better future through skill development and community empowerment.</p>
+    <a href="enroll.html" class="hero-btn">Enroll Now</a>
+  </section>
+
+  <!-- FOOTER -->
+  <section class="footer">
+    <h4>Contact Us</h4>
+    <p>Email: info@empoweringthenation.co.za | Phone: +27 11 123 4567</p>
+    <div class="icons">
+      <i class="fa fa-facebook"></i>
+      <i class="fa fa-twitter"></i>
+      <i class="fa fa-instagram"></i>
+    </div>
+    <p>© 2025 Empowering the Nation | Designed by Group 8</p>
+  </section>
+
+  <!-- NAV SCRIPT -->
+  <script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu() { navLinks.style.right = "0"; }
+    function hideMenu() { navLinks.style.right = "-200px"; }
+  </script>
+
+</body>
+</html>
