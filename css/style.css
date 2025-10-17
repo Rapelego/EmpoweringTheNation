@@ -17,6 +17,33 @@
   --light-text: #777;
 }
 
+/* ----- Global Header Styling ----- */
+
+header {
+  width: 100%;
+  background-color: white; /* clean, professional background */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 6%;
+  position: sticky; /* keeps it visible when scrolling */
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo positioning */
+header img {
+  width: 130px; /* adjust logo size */
+  height: auto;
+  position: relative;
+  top: 0;
+  left: 0;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+
 /* ========== GENERAL STYLING ========== */
 body {
   background-color: var(--cream-bg);
