@@ -4,32 +4,42 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cooking Course | Empowering the Nation</title>
-    <link rel="stylesheet" href="../css/style.css">
+
+  <!-- Correct path to your CSS -->
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 
+  <!-- HEADER -->
   <header>
-    <img src="logo.png" alt="Empowering the Nation Logo">
+    <!-- Logo path fixed -->
+    <img src="../images/logo.jpg" alt="Empowering the Nation Logo">
+
+    <!-- Fixed navigation links -->
     <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="courses.html">Courses</a>
-      <a href="blog.html">Blog</a>
-      <a href="contact.html">Contact Us</a>
-      <a href="cart.html">Cart</a>
+      <a href="../index.html">Home</a>
+      <a href="../about.html">About</a>
+      <a href="../courses.html">Courses</a>
+      <a href="#">Blog</a>
+      <a href="../contact.html">Contact Us</a>
+      <a href="../purchase.html">Cart</a>
     </nav>
   </header>
 
-  <section>
-    <button onclick="window.location.href='6weekcourses.html'">Back to Course</button>
+  <!-- BACK BUTTON -->
+  <section style="margin:20px;">
+    <button class="hero-btn" onclick="window.location.href='6weekscourses.html'">← Back to Courses</button>
   </section>
 
+  <!-- MAIN CONTENT -->
   <main>
-    <div class="course-detail">
-      <div class="course-image">
-        <img src="cooking.jpg" alt="Cooking Course Image">
+    <div class="course-detail" style="display:flex; flex-wrap:wrap; gap:30px; width:80%; margin:auto; padding:40px 0;">
+      <div class="course-image" style="flex:1;">
+        <!-- Correct image path -->
+        <img src="../images/cooking.jpg" alt="Cooking Course Image" style="width:100%; border-radius:10px;">
       </div>
-      <div class="course-info">
+
+      <div class="course-info" style="flex:1;">
         <h2>Cooking</h2>
         <p><strong>Price:</strong> R750</p>
         <h3>Content</h3>
@@ -40,12 +50,14 @@
           <li>Tasty and nutritious recipes</li>
           <li>Preparation and cooking of meals</li>
         </ul>
-        <button onclick="window.location.href='enroll.html'">Click to Enroll</button>
+        <!-- Link fixed to enroll page in root folder -->
+        <button class="hero-btn red-btn" onclick="window.location.href='../enroll.html'">Click to Enroll</button>
       </div>
     </div>
   </main>
 
-  <footer>
+  <!-- FOOTER -->
+  <footer class="footer">
     <p>Powered By GRP 8</p>
     <p>
       <a href="#">Terms & Conditions</a> |
@@ -53,11 +65,13 @@
       <a href="#">Social Links</a>
     </p>
     <div class="social-icons">
-      <a href="#"><img src="twitter.png" alt="Twitter"></a>
-      <a href="#"><img src="facebook.png" alt="Facebook"></a>
-      <a href="#"><img src="whatsapp.png" alt="WhatsApp"></a>
+      <a href="#"><img src="../images/twitter.png" alt="Twitter"></a>
+      <a href="#"><img src="../images/facebook.png" alt="Facebook"></a>
+      <a href="#"><img src="../images/whatsapp.png" alt="WhatsApp"></a>
     </div>
   </footer>
 
+  <!-- Correct JavaScript path -->
+  <script src="../js/script.js"></script>
 </body>
 </html>
