@@ -9,44 +9,87 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
+
+  <!-- HEADER -->
   <section class="sub-header">
     <nav>
       <a href="index.html"><img src="images/logo.jpg" alt="Empowering the Nation Logo"></a>
-     <div class="nav-links" id="navLinks"> 
+      <div class="nav-links" id="navLinks"> 
         <ul>
           <li><a href="index.html">HOME</a></li>
           <li><a href="about.html">ABOUT</a></li>
           <li><a href="pages/courses.html">COURSES</a></li>
-          <li><a href="contact.html">CONTACT</a></li>
+          <li><a href="contact.html" class="active">CONTACT</a></li>
         </ul>
       </div>
     </nav>
     <h1>Contact Us</h1>
   </section>
 
-  <section class="facilities">
-    <h1>Our Venues</h1>
-    <p>We operate from three training venues across Johannesburg.</p>
-    <div class="row">
-      <div class="facilities-col">
-        <img src="images/campus1.jpg" alt="Sandton Campus">
-        <h3>Sandton</h3>
-        <p>45 Grayston Dr, Sandton</p>
-      </div>
-      <div class="facilities-col">
-        <img src="images/campus2.jpg" alt="Soweto Campus">
-        <h3>Soweto</h3>
-        <p>12 Vilakazi St, Soweto</p>
-      </div>
-      <div class="facilities-col">
-        <img src="images/campus3.jpg" alt="Randburg Campus">
-        <h3>Randburg</h3>
-        <p>8 Malibongwe Dr, Randburg</p>
+  <!-- CONTACT INFO -->
+  <section class="contact-section">
+    <div class="contact-container">
+      <div class="contact-info">
+        <h2>Get in Touch</h2>
+        <p>We’d love to hear from you! Reach us through any of the methods below.</p>
+
+        <div class="contact-details">
+          <p><i class="fa-solid fa-phone"></i> <a href="tel:+27114567890">+27 11 456 7890</a></p>
+          <p><i class="fa-solid fa-envelope"></i> <a href="mailto:info@empoweringthenation.org">info@empoweringthenation.org</a></p>
+          <p><i class="fa-solid fa-location-dot"></i> Johannesburg, South Africa</p>
+        </div>
+
+        <div class="social-links">
+          <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
       </div>
     </div>
   </section>
 
-   <!-- FOOTER -->
+  <!-- MAPS FOR 3 VENUES -->
+  <section class="map-grid">
+    <h2>Our Training Venues</h2>
+    <p>We operate from three venues across Johannesburg — find your nearest training centre below.</p>
+
+    <div class="map-container-grid">
+
+      <!-- Sandton -->
+      <div class="map-card">
+        <h3>Sandton Campus</h3>
+        <p>45 Grayston Dr, Sandton</p>
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3583.678529156482!2d28.058312175227235!3d-26.108000977118698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9573560b4adf8d%3A0x50c9b11a1226a802!2sSandton%20City!5e0!3m2!1sen!2sza!4v1700000000000!5m2!1sen!2sza"
+          width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+      </div>
+
+      <!-- Soweto -->
+      <div class="map-card">
+        <h3>Soweto Campus</h3>
+        <p>12 Vilakazi St, Soweto</p>
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3577.091633544799!2d27.928084775234527!3d-26.250272376209537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95a9a4e63b14a3%3A0x7e51f8b9cbdc0bb9!2sVilakazi%20Street!5e0!3m2!1sen!2sza!4v1700000000000!5m2!1sen!2sza"
+          width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+      </div>
+
+      <!-- Randburg -->
+      <div class="map-card">
+        <h3>Randburg Campus</h3>
+        <p>8 Malibongwe Dr, Randburg</p>
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3581.796026345402!2d27.98692157522971!3d-26.143444776691863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e959ef9cf6b15f7%3A0x132d14a9374b6d6e!2sMalibongwe%20Dr!5e0!3m2!1sen!2sza!4v1700000000000!5m2!1sen!2sza"
+          width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
   <section class="footer">
     <p>Powered By GRP 8 | 
       <a href="#">Terms & Conditions</a> | 
@@ -55,13 +98,13 @@
     </p>
     <div class="icons">
       <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-<a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-<a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-<a href="https://wa.me/" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-
-  </div>
-  <p>© 2025 Empowering the Nation | Designed by GRP 8</p>
+      <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+      <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://wa.me/" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+    <p>© 2025 Empowering the Nation | Designed by GRP 8</p>
   </section>
-   <script src="js/script.js"></script>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
