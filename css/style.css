@@ -420,6 +420,108 @@ button[type=submit]:hover, .hero-btn:hover {
 }
 
 
+
+/* ===== COURSE SUMMARY GRID ===== */
+.course-summary {
+  text-align: center;
+  padding: 60px 0;
+  background-color: #fffdf5;
+}
+
+.course-summary h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.course-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.course-card {
+  width: 250px;
+  background-color: #fcfcee;
+  border: 1px solid #a5d6a7;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  padding: 15px;
+  transition: transform 0.3s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+}
+
+.course-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.course-card h3 {
+  margin-top: 10px;
+  color: #333;
+  font-weight: 600;
+}
+
+.course-card .price {
+  color: #4c7c45;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.course-btns {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.read-btn, .buy-btn {
+  background-color: #5c4033;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 13px;
+  transition: background 0.3s ease;
+}
+
+.buy-btn {
+  background-color: #d3d3d3;
+  color: #000;
+}
+
+.read-btn:hover {
+  background-color: #a0522d;
+}
+
+.buy-btn:hover {
+  background-color: #4caf50;
+  color: white;
+}
+
+.back-btn {
+  margin-top: 40px;
+  background-color: #70a66a;
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.back-btn:hover {
+  background-color: #4c7c45;
+}
+
+
+
 /* ========== FOOTER ========== */
 .footer {
   background-color: var(--primary-green);
