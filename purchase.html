@@ -15,7 +15,6 @@
     <nav>
       <a href="index.html"><img src="images/logo.jpg" alt="Empowering the Nation Logo"></a>
       <div class="nav-links" id="navLinks">
-        
         <ul>
           <li><a href="index.html">HOME</a></li>
           <li><a href="about.html">ABOUT</a></li>
@@ -23,7 +22,6 @@
           <li><a href="contact.html">CONTACT</a></li>
         </ul>
       </div>
-      
     </nav>
     <h1>Calculate Course Fees</h1>
   </section>
@@ -40,31 +38,33 @@
       <div>
         <h3>6-Month Courses</h3>
         <ul style="list-style:none;">
-          <li><input type="checkbox" class="course" value="1500" data-name="First Aid"> First Aid (R1500)</li>
-          <li><input type="checkbox" class="course" value="1500" data-name="Sewing"> Sewing (R1500)</li>
-          <li><input type="checkbox" class="course" value="1500" data-name="Landscaping"> Landscaping (R1500)</li>
-          <li><input type="checkbox" class="course" value="1500" data-name="Life Skills"> Life Skills (R1500)</li>
+          <li><input type="checkbox" id="firstAid"> First Aid (R1500)</li>
+          <li><input type="checkbox" id="sewing"> Sewing (R1500)</li>
+          <li><input type="checkbox" id="landscaping"> Landscaping (R1500)</li>
+          <li><input type="checkbox" id="lifeSkills"> Life Skills (R1500)</li>
         </ul>
       </div>
 
       <div style="margin-left:50px;">
         <h3>6-Week Courses</h3>
         <ul style="list-style:none;">
-          <li><input type="checkbox" class="course" value="750" data-name="Child Minding"> Child Minding (R750)</li>
-          <li><input type="checkbox" class="course" value="750" data-name="Cooking"> Cooking (R750)</li>
-          <li><input type="checkbox" class="course" value="750" data-name="Garden Maintenance"> Garden Maintenance (R750)</li>
+          <li><input type="checkbox" id="childMinding"> Child Minding (R750)</li>
+          <li><input type="checkbox" id="cooking"> Cooking (R750)</li>
+          <li><input type="checkbox" id="gardening"> Garden Maintenance (R750)</li>
         </ul>
       </div>
     </div>
-
-    <!-- CALCULATE BUTTON -->
-    <button class="hero-btn" id="calculateBtn" style="margin-top:20px;">Calculate Total</button>
   </section>
+
+  <!-- CALCULATE BUTTON -->
+  <div style="text-align:center; margin:20px;">
+    <button class="hero-btn red-btn" onclick="calculateTotal()">Calculate Total</button>
+  </div>
 
   <!-- QUOTE SUMMARY SECTION -->
   <section style="width:80%; margin:auto; background-color:#f2f2f2; border-radius:8px; padding:30px;">
     <h2>Quote Summary</h2>
-    <p><strong>Selected Courses:</strong> <span id="selectedCourses">None</span></p>
+    <p><strong>Selected Courses:</strong> <span id="selectedCourses">No courses selected</span></p>
     <p><strong>Subtotal:</strong> <span id="subtotal">R 0.00</span></p>
     <p><strong>Discount:</strong> <span id="discount">R 0.00</span></p>
     <p><strong>VAT (15%):</strong> <span id="vat">R 0.00</span></p>
@@ -84,15 +84,14 @@
     </p>
     <div class="icons">
       <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-<a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-<a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-<a href="https://wa.me/" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-
-  </div>
-  <p>© 2025 Empowering the Nation | Designed by GRP 8</p>
+      <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+      <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://wa.me/" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+    <p>© 2025 Empowering the Nation | Designed by GRP 8</p>
   </section>
 
-  <!-- LINK JAVASCRIPT FILE -->
+  <!-- JAVASCRIPT LINK -->
   <script src="js/script.js"></script>
 </body>
 </html>
