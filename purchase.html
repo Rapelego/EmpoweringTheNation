@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" type="image/jpg" href="images/logo.jpg">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!--  SweetAlert2 Library -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
 
@@ -38,40 +40,38 @@
       <div>
         <h3>6-Month Courses</h3>
         <ul style="list-style:none;">
-          <li><input type="checkbox" id="firstAid"> First Aid (R1500)</li>
-          <li><input type="checkbox" id="sewing"> Sewing (R1500)</li>
-          <li><input type="checkbox" id="landscaping"> Landscaping (R1500)</li>
-          <li><input type="checkbox" id="lifeSkills"> Life Skills (R1500)</li>
+          <li><input type="checkbox" class="course" id="firstAid" value="1500" data-name="First Aid"> First Aid (R1500)</li>
+          <li><input type="checkbox" class="course" id="sewing" value="1500" data-name="Sewing"> Sewing (R1500)</li>
+          <li><input type="checkbox" class="course" id="landscaping" value="1500" data-name="Landscaping"> Landscaping (R1500)</li>
+          <li><input type="checkbox" class="course" id="lifeSkills" value="1500" data-name="Life Skills"> Life Skills (R1500)</li>
         </ul>
       </div>
 
       <div style="margin-left:50px;">
         <h3>6-Week Courses</h3>
         <ul style="list-style:none;">
-          <li><input type="checkbox" id="childMinding"> Child Minding (R750)</li>
-          <li><input type="checkbox" id="cooking"> Cooking (R750)</li>
-          <li><input type="checkbox" id="gardening"> Garden Maintenance (R750)</li>
+          <li><input type="checkbox" class="course" id="childMinding" value="750" data-name="Child Minding"> Child Minding (R750)</li>
+          <li><input type="checkbox" class="course" id="cooking" value="750" data-name="Cooking"> Cooking (R750)</li>
+          <li><input type="checkbox" class="course" id="gardening" value="750" data-name="Garden Maintenance"> Garden Maintenance (R750)</li>
         </ul>
       </div>
     </div>
-  </section>
 
-  <!-- CALCULATE BUTTON -->
-  <div style="text-align:center; margin:20px;">
-    <button class="hero-btn red-btn" onclick="calculateTotal()">Calculate Total</button>
-  </div>
+    <!-- CALCULATE BUTTON -->
+    <button class="hero-btn" id="calculateBtn" style="margin-top:20px;">Calculate Total</button>
+  </section>
 
   <!-- QUOTE SUMMARY SECTION -->
   <section style="width:80%; margin:auto; background-color:#f2f2f2; border-radius:8px; padding:30px;">
     <h2>Quote Summary</h2>
-    <p><strong>Selected Courses:</strong> <span id="selectedCourses">No courses selected</span></p>
+    <p><strong>Selected Courses:</strong> <span id="selectedCourses">None</span></p>
     <p><strong>Subtotal:</strong> <span id="subtotal">R 0.00</span></p>
     <p><strong>Discount:</strong> <span id="discount">R 0.00</span></p>
     <p><strong>VAT (15%):</strong> <span id="vat">R 0.00</span></p>
     <p><strong>Total (incl. VAT):</strong> <span id="total">R 0.00</span></p>
 
     <div style="text-align:right; margin-top:20px;">
-      <a href="enroll.html" class="hero-btn red-btn">Proceed to Enroll</a>
+      <button class="hero-btn red-btn" id="enrollBtn">Proceed to Enroll</button>
     </div>
   </section>
 
@@ -91,7 +91,21 @@
     <p>© 2025 Empowering the Nation | Designed by GRP 8</p>
   </section>
 
-  <!-- JAVASCRIPT LINK -->
+  <!-- MAIN SCRIPT FILE -->
   <script src="js/script.js"></script>
+
+  <!--  SweetAlert Enrollment Confirmation -->
+  <script>
+    document.getElementById("enrollBtn").addEventListener("click", function() {
+      Swal.fire({
+        title: "Enrollment Successful! 🎉",
+        text: "Thank you for joining Empowering the Nation. You will receive your course details soon.",
+        icon: "success",
+        confirmButtonText: "OK",
+        confirmButtonColor: "#2e7d32"
+      });
+    });
+  </script>
+
 </body>
 </html>
