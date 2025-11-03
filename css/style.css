@@ -381,6 +381,15 @@ button[type=submit]:hover, .hero-btn:hover {
   margin-bottom: 15px;
 }
 
+.about-col img {
+  width: 80%;       /* Adjust to make smaller (try 70% or 60% if needed) */
+  max-width: 800px; /* Prevents the image from being too large */
+  height: auto;     /* Keeps proportions */
+  border-radius: 10px; /* Optional for softer corners */
+  display: block;
+  margin: 0 auto;   /* Centers the image */
+}
+
 .course-detail .course-info p {
   font-size: 16px;
   line-height: 1.6;
